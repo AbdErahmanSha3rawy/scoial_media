@@ -1,0 +1,518 @@
+
+.add_post{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    border-radius: 16px;    
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #8d8484;
+    z-index: 2;
+    margin-top: -20px;
+}
+.img_for_post{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: none;
+}
+.Eidt_Area{
+    width: 90%;
+    height: 150px;
+    justify-content: center;   
+    border: none;
+    display: none;
+}
+.Savebtn{
+    width: 48%;
+    background-image:linear-gradient(90deg,#AD46FF,#F6339A);
+    color: white;
+    height: 30px;
+    border-radius: 8px;
+}
+.Savebtn:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.Cancelbtn{
+    width: 48%;
+    border-radius: 8px;
+    border: none;
+}
+.Cancelbtn:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.add_post .User_Img1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+   margin: 15px 0 0 10px;
+}
+.add_post textarea{
+
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px #8d8484;
+
+
+}
+.add_post textarea:focus,.Eidt_Area textarea:focus{
+    outline-color: #ca09f1;
+    box-shadow:0px 5px  5px #f109e5;
+}
+form{
+    width: 90%;
+    background-color: white;
+    margin-left:50px;
+    box-shadow: 0px 0px 0px ;
+
+}
+.Add_Image{
+    width: 50%;
+    height: 36px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #9810FA;
+    font-family: sans-serif;
+
+}
+.boha{
+    display: flex;
+    
+    margin-top: 50px;
+    
+  margin-left: 50px;
+       z-index: 2;
+}
+.Add_Image img{
+    width: 30px;
+    }
+.Add_Image span{
+    width: 100px;
+}
+.Add_Image:hover{
+    cursor: pointer;
+}
+.btns{
+     position: relative;
+}
+.btns input{
+    position: absolute;
+    opacity:0;
+    height: 60px;
+   width: 100px;
+transform: translateY(5px);
+background-color: #2B7FFF;
+    z-index: 5;
+  margin-left: 50px;
+ 
+}
+.btns input:hover{
+    cursor: pointer;
+}  
+.btns{
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.postbtn{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-image: linear-gradient(90deg,#AD46FF,#F6339A);
+    opacity: 50%;
+    color: white;
+    border: none;
+    justify-self: end;
+    margin-left: 140px;
+}
+.postbtn img{
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+}
+.postbtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+.profile_descripe2{
+    display: flex;
+    height: 65px;
+    width: 80%;
+    border-radius: 50%;
+    align-self: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.profile_descripe {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.username_created_at{
+    display: flex;
+
+}
+.user_translating,.Name{
+background: none;
+border: none;
+
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    border: none;
+    background:none;
+    
+
+}
+.options:hover{
+    cursor: pointer;
+}
+.options img{
+    width: 50px;
+}
+.list {
+   position: absolute; /* بتخلي القائمة تعوم فوق العناصر من غير ما تحركها */
+    top: 50px;          /* المسافة تحت زرار الـ options (عدلها حسب الحاجة) */
+    right: 0px;        /* محاذاة القائمة جهة اليمين تحت زرار الـ options مباشرة */
+    width: 120px;
+    height: auto;       /* أفضل من تحديد ارتفاع ثابت عشان تكفي المحتوى */
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* ظل أنضف وأوضح */
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 99;   
+   animation: list 0.5s ease 1;
+  }
+  @keyframes  list{
+    to{
+    width: 121px;
+
+    }
+  }
+.list .Edit,.list .Delete,.list .Share{
+    display: flex;
+  margin-bottom: -20px;
+    text-decoration-line: none;
+}
+.list .Edit:hover,.list .Delete:hover,.list .Share:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.list img{
+    margin-right: 5px;
+}
+.list .Delete {
+    background: none;
+    border: none;
+    color: red;
+}
+.list .Delete:hover {
+cursor: pointer;
+}
+.list .Share{
+    background: none;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.list .Share img{
+width: 23px;
+
+}
+.Eidt_Area{
+    border: none;
+   width: 50%;
+}
+.Eidt_Area textarea{
+
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 7px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px #8d8484;
+    display: flex;
+    justify-self: center;
+    margin-top:-30px;
+}
+.Eidt_Area .btns{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    margin-top: -40px;
+
+}
+
+.Eidt_Area .btns .Savebtn{
+    border: none;
+    height: 100%;
+}
+
+
+
+.commentcontainer{
+display: none;
+width: 90%;
+justify-self: center;
+}
+
+.add_comment{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px ;
+    padding-bottom:15px ;
+     justify-self: center;
+    width: 100%;
+}
+.add_comment input{
+    width: 500px ;
+    height: 30px;
+    border-radius: 25px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: #E5E7EB 2px solid;    
+}
+.add_comment input:focus{
+ outline-color: #ca09f1;
+    box-shadow:0px 5px  5px #f109e5;
+
+}
+.add_comment button{
+width: 60px;
+height: 35px;
+border-radius: 30px;
+border:none;
+color: #FAF5FF;
+margin-left: 10px;
+opacity: 50%;
+background-image: linear-gradient(90deg,#AD46FF,#F6339A);
+
+}
+.add_comment button:hover{
+   cursor: pointer;
+   opacity: 100%;
+   transform: scale(1.1);
+   transition-duration: 1s;
+}
+.add_comment > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.comment_img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.comment{
+ justify-self: center;
+    width: 100%;
+    display: flex;
+}
+.comment_content{
+    display: flex;
+    
+    
+}
+.commenty{
+    background-color: #F3F4F6;
+    margin-left: 10px;
+    width: 525px;
+    height: 55px;
+    padding:10px ;
+    margin-bottom: 10px;
+    border-radius: 16px;
+}
+.username_comment{
+    margin-top: -2px;
+    font-weight: bold;
+}
+.Elcomment{
+   margin-top: 5px;
+}
+.react{
+    display: flex;
+    margin-left: 55px;
+    margin-top: -25px;
+}
+.react button{
+    border: none;
+    background: none;
+}
+.react p{
+    margin-right: 10px;
+}
+
+.container{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+
+}
+.user_translating{
+    display: flex;
+   align-self: center;
+   margin-right: 10px;
+}
+.user_translating img{
+ width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+.profile_name{
+    display: flexbox;
+    transform: translateY(0px);
+
+}
+.Name{
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom:-2px;
+    
+
+    
+}
+.username_created_at{
+    font-size: 14px;
+    color: #6A7282;
+}
+.post_descripe{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+        word-wrap: break-word;
+
+}
+.post_img{
+display: block;
+width: 100%;
+
+}
+
+.actives{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.actives button{
+    display: flex;
+    background:none;
+    border: none;
+    height: 25px;
+}
+.actives button:hover{
+cursor: pointer;
+}
+
+
+.post{
+    display: block;
+    justify-self: center;
+    padding: 10px 0;
+    width: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px #8d8484;
+    overflow: hidden;
+
+}
+.profile_descripe {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.post_descripe {
+   margin-top: -25px;
+}
+.container{
+    border-radius: 16px;
+    margin-bottom: 80px;
+}
+
+
+.post_img img{
+    width: 100%;
+}
+.actives{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+.actives button{
+    display: flex;
+    background:none;
+    border: none;
+    height: 25px;
+}
+.actives button:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+.actives .commentbtn,.actives .sharebtn{
+  margin-left: 10px;
+}
+.actives .lovebtn,.actives .commentbtn{
+
+margin-right: 5px;
+}
+.Emojies{
+    display:none;
+    padding:0 10px  ;
+    border-radius: 10px;
+    background-color: rgb(235, 229, 229);
+    z-index: 2;
+    transform:translatex(-170px) translateY(-25px);
+}
+.Emojies:hover{
+    display: flex;
+}
+.Emojies button:hover{
+   transform: scale(1.2);
+}
+.lovebtn:hover ~ .Emojies{
+  display: flex;
+}
+.list .Edit  {
+    border:none;
+    background: none;
+}
+.list .Edit:hover {
+cursor: pointer;
+}

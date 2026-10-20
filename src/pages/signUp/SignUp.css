@@ -1,0 +1,212 @@
+
+ .container{
+    display: flex;
+    justify-self: center;
+    height: auto;
+    margin-bottom: 200px;
+    margin-left: -50px;
+    width: 90%;
+    justify-content: space-between;
+ }
+
+.descripe{
+    display: inline-flexbox;
+    align-content: center;
+    width: 50%;
+    padding-left: 10px;
+
+}
+.descripe_icon{
+ font-size: 40px;
+  flex-grow: 1;
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+}
+.descripe_icon .img{
+    margin-right: 10px;
+    background-image: linear-gradient(150deg,#AD46FF,#F6339A,#2B7FFF );
+    
+    width: 55px;
+    height: 55px;
+    border-radius:20px;
+    display: inline-flex;
+    justify-content: center;
+}
+.descripe_icon img{
+     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     display: flex;
+    align-self: center;
+
+}
+.descripo{
+    display: flex;
+
+}
+.descripe h2{
+     font-size: 40px;
+  font-family: serif;
+  margin-bottom: -10px;
+}
+.descripe p{
+    font-size: 22px;
+color: #4A5565;
+
+}
+
+ .circle{
+background-image: linear-gradient(90deg,#51A2FF,#C27AFF);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transform: translateX(-50px);
+    opacity: 40%;
+    z-index: -10;
+}
+.squire{
+background-image: linear-gradient(150deg,#C27AFF,#FB64B6);
+     transform: translateX(30px);
+    width: 85px;
+    height: 85px;
+    border-radius: 15px;
+    opacity: 40%;
+    transform: rotate(10deg)
+    
+
+}
+
+form{
+    width: 40%;
+    border: 2px outset;
+    padding:15px 50px;
+  font-family: sans-serif;
+  height: auto;
+  margin-left: -60px;
+      box-shadow: 0px 2px 5px #8d8484;
+  border: none;
+  border-radius: 20px;
+         color: #4A5565;
+
+
+}
+
+form h2{
+       font-size: 25px;
+       color: black;
+}
+form p{
+       font-size: 18px;
+
+}
+label{
+        font-size: 17px;
+      color: black;
+}
+input{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 30px;
+    box-shadow: none;
+    border: 1.5px solid rgb(214, 209, 209);
+    margin-bottom: -10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+input:focus{
+    outline-color: #ca09f1;
+    box-shadow:0px 3px  5px #f109e5;
+}
+
+#Profile_Image2{
+    z-index: 2;
+    transform: translateY(-95px);
+    opacity: 0;
+    width: 80%;
+}
+#Profile_Image2:hover{
+    cursor: pointer;
+}
+
+
+form .Create_Account{
+    display:flex;
+     width: 50%;
+    height: 40px;
+    border-radius: 13px;
+    padding: 10px;
+    font-size: 20px;
+    background-image: linear-gradient(90deg,#AD46FF,#F6339A,#2B7FFF );
+    justify-content: center;
+    color: white;
+    justify-self: center;
+    margin-top: -85px;
+    border: none;
+
+    
+
+}
+
+form .Create_Account:hover{
+    cursor: pointer;
+    transition-duration: 1s;
+ transform: scale(1.1);
+}
+
+form .link{
+    display: flex;
+    text-align: center;
+    font-size: larger;
+    padding: auto;
+    text-decoration-line: none;
+
+}
+form .question{
+    display:flex;
+    justify-self: center;
+}
+.question Link{
+    display: flex;
+    justify-self: center;
+text-decoration-line: none;
+  font-size: inherit;
+}
+.question p{
+    display: inline-flex;
+
+}
+.contain {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* عشان الـ input ورسالة الخطأ يبقوا تحت بعض */
+  width: 100%;
+}
+
+/* دي الحاوية اللي جواها الـ input والأيقونة */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input_icon {
+  position: absolute;
+  right: 15px; /* مسافة مظبوطة من اليمين جوه الـ input */
+  top: 50%;
+  transform: translateY(-50%); /* عشان الأيقونة تتسنتر رأسياً بدقة مية مية */
+  pointer-events: none; /* عشان لو حد دوس بالماوس على الأيقونة الكلك يوصل للـ input عادي */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+text-align: left;
+  position: absolute;
+  bottom: -18px; /* عشان الرسالة تبقى تحت الـ input */
+  left: 0;
+}
