@@ -4,7 +4,7 @@ import { updatePost } from '../../functions/updatePost';
 import { deletePost } from '../../functions/deletePost';
 import toast from 'react-hot-toast';
 import { createComment } from '../../functions/createComment';
-import Comments from '../comments/comments';
+import Comments from '../comments/Comments';
 const FeedPost = ({post, posts, setPosts}) => {
 const currentUserId = localStorage.getItem("user_id");
 const isMyPost = post.author.id === Number(currentUserId);
