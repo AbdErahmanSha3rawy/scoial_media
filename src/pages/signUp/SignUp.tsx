@@ -4,7 +4,7 @@ import './SignUp.css';
 import { register as registerApi } from '../../functions/sign Up';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { signUpSchema, SignUpFormData } from './signUpValidation'; // استيراد السكيما المستقلة
+import { signUpSchema, type SignUpFormData } from './signUpValidation'; // استيراد السكيما المستقلة
 
 const SignUp: React.FC = () => {
   const navigate = useNavigate(); 

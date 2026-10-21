@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Story from './story';
-import './Stories.css'
+import Story from './Story';
+import './stories.css'
 
 
 // Import Swiper React components

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { loginSchema, LoginFormData } from './loginValidation'; // استيراد السكيما والـ Type
+import { loginSchema, type LoginFormData } from './loginValidation'; // استيراد السكيما والـ Type
 import { login } from '../../functions/login';
 
 const LoginForm = () => {

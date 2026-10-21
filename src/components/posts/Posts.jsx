@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Post from './Post'
-import './Posts.css'
+import './posts.css'
 const Posts = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
